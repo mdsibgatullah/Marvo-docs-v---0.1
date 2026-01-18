@@ -21,6 +21,18 @@ navDropA.forEach(a => {
 });
 
 
+document.querySelectorAll('.navs_item .nav_toggle').forEach(function(input) {
+    input.addEventListener('click', function () {
+        docsNav.classList.remove('active');
+        overlay.classList.remove('active');
+        const parentLi = this.closest('.navs_item');
+        const link = parentLi.querySelector('a');
+        if (link) {
+            link.click();
+        }
+    });
+});
+
 const toggles = document.querySelectorAll('.nav_toggle');
 toggles.forEach(toggle => {
     toggle.addEventListener('change', function () {
@@ -70,6 +82,7 @@ function scrollSpy() {
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
+        console.log(sectionHeight);
 
       if (scrollTop >= sectionTop - sectionHeight / 3) {
         currentSectionId = section.getAttribute('id');
