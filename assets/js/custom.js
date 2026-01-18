@@ -75,7 +75,6 @@ function scrollSpy() {
         currentSectionId = section.getAttribute('id');
       }
     });
-
     navLinks.forEach(link => {
       const parent = link.parentElement;
       if (currentSectionId && link.getAttribute('href') === '#' + currentSectionId) {
