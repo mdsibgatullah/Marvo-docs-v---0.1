@@ -150,7 +150,7 @@ a{
 	border-left: 1px solid transparent;
 	transform: rotate(-45deg);
 	top: 4px;
-	right: 0;
+	right: 18px;
 	transition: .3s;
 	border-radius: 2px;
 }
@@ -168,22 +168,23 @@ a{
 }
 .nav_drop_item span{
 	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: #f26b3a;
+	width: 6px;
+	height: 6px;
+	background-color: #f59978;
 	transition: .4s;
-	left: -17px;
+	left: -15.5px;
 	opacity: 0;
 }
 .nav_drop_item.active{
-	color: #fff;
+	color: #f59978;
 	text-shadow: 0 0 1px #000000;
 	padding-left: 5px;
+	font-size: 14px;
 }
 .nav_drop_item.active span{
-	left: -17px;
+	height: 6px;
 	opacity: 1;
+	border-radius: 50%;
 }
 .nav_item_head{
 	justify-content: space-between;
@@ -221,7 +222,7 @@ a{
 	height: auto;
 }
 .nav_toggle:checked ~ .nav_item_head{
-	box-shadow: 2px -2px 6px gray, 1px 1px 6px #949494;
+	box-shadow: 0px 0px 8px gray;
 	padding: 8px 15px 8px 10px;
 	border-radius: 5px;
 	color: var(--primary-color);
@@ -229,6 +230,7 @@ a{
 .nav_toggle:checked ~ .nav_item_head h5::after{
 	transform: rotate(45deg);
 	top: 3px;
+	right: 0;
 }
 
 /* --------------- */
@@ -250,11 +252,12 @@ a{
 	display: none;
 
 }
-.docs_wraper section{
+.docs_wraper section{    
 	padding: 36px 40px;
-	background-color: #eceff2;
-	margin-bottom: 40px;
-    box-shadow: 1px 1px 30px #808080b3;
+    background-color: #efefef;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 30px #c3c3c363;
+    border: 1px solid #e3e3e3;
 }
 .welcome_doc h1{
 	margin: 15px 0;
@@ -266,7 +269,7 @@ a{
 	font-size: 16px;
 }
 .docs_info section h2{
-	border-bottom: 2px solid #fff;
+	border-bottom: 1px solid #80808066;
 	padding-bottom: 10px;
 }
 .docs_info section ul li{
@@ -291,13 +294,14 @@ a{
 	z-index: 10;
 	opacity: 0;
 }
-
+/* -------- responsive css --------- */
 @media screen and (max-width: 768px) {
 	.mavro_doc{
 		display: block;
 	}
 	.docs_info {
 		padding: 30px;
+        padding-top: 120px;
 	}
 	.menu_toggle{
         display: flex;
@@ -305,11 +309,20 @@ a{
         top: 0;
         left: 0;
         right: 0;
+		justify-content: center;
 	}
-	.mavro_sidebar{
+	.mavro_sidebar,#toggle_btn{
 		position: fixed;
 		top: 0;
 		left: -100%;
+	}
+	#toggle_btn{
+        left: 20px;
+        top: 25px;
+		border: 1px solid gray;
+		padding: 10px 20px;
+		border-radius: 5px;
+    	box-shadow: 1px 1px 6px #4747473b;
 	}
 	.mavro_sidebar.active{
 		left: 0;

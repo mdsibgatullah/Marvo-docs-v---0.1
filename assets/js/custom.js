@@ -71,7 +71,7 @@ function scrollSpy() {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.offsetHeight;
 
-      if (scrollTop >= sectionTop - sectionHeight / 1) {
+      if (scrollTop >= sectionTop - sectionHeight / 3) {
         currentSectionId = section.getAttribute('id');
       }
     });
