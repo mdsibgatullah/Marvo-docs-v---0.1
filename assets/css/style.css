@@ -460,7 +460,7 @@ a {
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15px;
 }
-.sv_step_theme_imgs span b, .sv_step_theme_img span img{
+.sv_step_theme_imgs span b, .sv_step_theme_imgs span img{
 	display: block;
 }
 .sv_step_theme_img span{
