@@ -105,4 +105,8 @@ function scrollSpy() {
 
 scrollSpy();
 
-
+ document.querySelectorAll('.sv_step_theme_img span').forEach(function(span) {
+    span.addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  });

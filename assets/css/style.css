@@ -455,13 +455,16 @@ a {
 	column-gap: 10px;
 	flex-wrap: wrap;
 }
-.sv_step_theme_img{
+.sv_step_theme_img,.sv_step_theme_imgs{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15px;
 }
+.sv_step_theme_imgs span b, .sv_step_theme_img span img{
+	display: block;
+}
 .sv_step_theme_img span{
-	overflow: hidden;
+	cursor: pointer;
 }
 .overlay {
 	position: fixed;
@@ -474,7 +477,13 @@ a {
 	z-index: 10;
 	opacity: 0;
 }
-
+.sv_step_theme_img span.active img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+	width: 100%;
+    transform: translate(-50%, -50%);
+}
 /* -------- responsive css --------- */
 @media screen and (max-width: 768px) {
 	.mavro_doc {
