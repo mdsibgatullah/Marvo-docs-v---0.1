@@ -1,156 +1,1177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>doc</title>
 
     <!-- ------- css ------- -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
     <div class="mavro_doc">
-        <div class="overlay"></div>
-        <div class="mavro_sidebar">
-            <div class="nav_head">
-                <div class="mavro_logo">
-                    <img src="assets/images/logo_white.svg" alt="">
-                </div>
-                <p class="mavro_version">v - 1.0.0</p>
-            </div>
-            <nav class="docs_nav">
-                <ul class="nav_list">
-                    <li class="nav_item navs_item">
-                        <input type="checkbox" name="nav_toggle" class="nav_toggle">
-                        <div class="nav_item_head nav_head_title">
-                            <a href="#start">Prequisites</a>
-                        </div>
-                    </li>
-                    <li class="nav_item navs_item">
-                        <input type="checkbox" name="nav_toggle" class="nav_toggle">
-                        <div class="nav_item_head nav_head_title">
-                            <a href="#start4">Prequisites</a>
-                        </div>
-                    </li>
-                    <li class="nav_item">
-                        <input type="checkbox" name="nav_toggle" class="nav_toggle">
-                        <div class="nav_item_head">
-                            <h5>Getting Started</h5>
-                        </div>
-                        <ul class="nav_drop">
-                            <li class="nav_drop_item">
-                                <span></span>
-                                <a href="#start">Prequisites</a>
-                            </li>
-                            <li class="nav_drop_item">
-                                <span></span>
-                                <a href="#start2">Install</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav_item">
-                        <input type="checkbox" name="nav_toggle" class="nav_toggle">
-                        <div class="nav_item_head">
-                            <h5>Getting Started</h5>
-                        </div>
-                        <ul class="nav_drop">
-                            <li class="nav_drop_item">
-                                <span></span>
-                                <a href="#start3">Prequisites</a>
-                            </li>
-                            <li class="nav_drop_item">
-                                <span></span>
-                                <a href="#start4">Install</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="nav_footer">
-                    <p>
-                        Mavro Documentation <br>
-                        Last updated: 1/17/2026, 10:46:51 AM
-                    </p>
-                </div>
-            </nav>
+      <div class="overlay"></div>
+      <div class="mavro_sidebar">
+        <div class="nav_head">
+          <div class="mavro_logo">
+            <img src="assets/images/logo_white.svg" alt="" />
+          </div>
+          <p class="mavro_version">v - 1.0.0</p>
         </div>
-        <main class="docs_wraper">
-            <div class="menu_toggle flex">
-                <button id="toggle_btn">Menu</button>
-                <span><img src="assets/images/logo_white.svg" alt="logo"></span>
+        <nav class="docs_nav">
+          <ul class="nav_list">
+            <!-- Start:: Wellcome -->
+            <li class="nav_item navs_item">
+              <input type="checkbox" name="nav_toggle" class="nav_toggle" />
+              <div class="nav_item_head nav_head_title">
+                <a href="#welcome1">WELLCOME</a>
+              </div>
+            </li>
+
+            <!-- Start:: Installation -->
+            <li class="nav_item">
+              <input type="checkbox" name="nav_toggle" class="nav_toggle" />
+              <div class="nav_item_head">
+                <h5>INSTALLATION</h5>
+              </div>
+              <ul class="nav_drop">
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#install2">Install Theme</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#update3">Update Theme</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#app4">Install App</a>
+                </li>
+              </ul>
+            </li>
+            <!-- End:: Installation -->
+
+            <!-- Start:: BASIC CONFIGURATION -->
+            <li class="nav_item">
+              <input type="checkbox" name="nav_toggle" class="nav_toggle" />
+              <div class="nav_item_head">
+                <h5>BASIC CONFIGURATION</h5>
+              </div>
+              <ul class="nav_drop">
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#customer5">Customer Registration </a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#shipping6">Shipping Rates</a>
+                </li>
+              </ul>
+            </li>
+            <!-- End:: BASIC CONFIGURATION -->
+
+            <!-- Start:: THEME SETTINGS -->
+            <li class="nav_item">
+              <input type="checkbox" name="nav_toggle" class="nav_toggle" />
+              <div class="nav_item_head">
+                <h5>THEME SETTINGS</h5>
+              </div>
+              <ul class="nav_drop">
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#typography7">Typography</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#logo8">Logo and favicon</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#color9">Color schema</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#button10">Buttons</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#social11">Social media</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#card12">Product card</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#language13">Theme language</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#currence14">Multiple Currencies</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#search15">Quick Search</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#progress16">Cart and progressbar</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#newsletter17">Newsletter popup</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#goup18">Go up</a>
+                </li>
+              </ul>
+            </li>
+            <!-- End:: THEME SETTINGS -->
+
+            <!-- Start:: HEADER -->
+            <li class="nav_item">
+              <input type="checkbox" name="nav_toggle" class="nav_toggle" />
+              <div class="nav_item_head">
+                <h5>BASIC CONFIGURATION</h5>
+              </div>
+              <ul class="nav_drop">
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Header Layout</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Header For Desktop</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Header For Desktop</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Header For Mobile</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Set up Advanced Mega/Drop Down Menu</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Mobile Menu</a>
+                </li>
+              </ul>
+            </li>
+            <!-- End:: HEADER -->
+
+            <!-- Start:: SECTIONS -->
+            <li class="nav_item">
+              <input type="checkbox" name="nav_toggle" class="nav_toggle" />
+              <div class="nav_item_head">
+                <h5>SECTIONS</h5>
+              </div>
+              <ul class="nav_drop">
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Section On Every Page</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">All Sections in Theme</a>
+                </li>
+              </ul>
+            </li>
+            <!-- End:: SECTIONS -->
+
+            <!-- Start:: PAGES -->
+            <li class="nav_item">
+              <input type="checkbox" name="nav_toggle" class="nav_toggle" />
+              <div class="nav_item_head">
+                <h5>PAGES</h5>
+              </div>
+              <ul class="nav_drop">
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Collections page </a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Product page</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Blog page</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Collection list</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Gift card</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Cart page</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Article</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">About us</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Contact us</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Search</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Password</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">404</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Account Login</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start4">Wishlist</a>
+                </li>
+                <li class="nav_drop_item">
+                  <span></span>
+                  <a href="#start3">Other pages (policy)</a>
+                </li>
+              </ul>
+            </li>
+            <!-- End:: PAGES -->
+          </ul>
+          <div class="nav_footer">
+            <p>
+              Mavro Documentation <br />
+              Last updated: 1/17/2026, 10:46:51 AM
+            </p>
+          </div>
+        </nav>
+      </div>
+      <main class="docs_wraper">
+        <div class="menu_toggle flex">
+          <button id="toggle_btn">Menu</button>
+          <span><img src="assets/images/logo_white.svg" alt="logo" /></span>
+        </div>
+        <div class="docs_info">
+          <section class="welcome_doc" id="welcome1">
+            <p class="subtitle">Where Innovation Meets Design</p>
+            <h1 class="title">Welcome to Mavro</h1>
+            <p>
+              Welcome to Mavro, a theme built not just for functionality, but
+              for a seamless journey of creating a brand that stands out. Mavro
+              is more than just a template – it's the foundation of your next
+              great eCommerce venture. It embodies precision, flexibility, and
+              cutting-edge design tailored to meet the dynamic needs of modern
+              entrepreneurs. In a digital world where every detail matters,
+              Mavro ensures your store isn't just another website, but a
+              powerful, memorable experience. From intuitive navigation to sleek
+              layouts and lightning-fast performance, every aspect of Mavro is
+              engineered to elevate your business to the next level.
+            </p>
+            <br />
+            <h3>What Sets Mavro Apart?</h3>
+            <ul>
+              <li>
+                <b>Next-Level Customization:</b> With Mavro, you aren’t confined
+                to pre-made designs. You hold the reins to shape your store
+                exactly the way you envision it – no compromises.
+              </li>
+              <li>
+                <b>User-Centric Experience:</b> Designed with your customers in
+                mind, Mavro ensures every interaction is smooth, intuitive, and
+                optimized for conversion.
+              </li>
+              <li>
+                <b>Performance First:</b> Speed, reliability, and mobile
+                optimization are at the core of Mavro, delivering a flawless
+                experience across all devices.
+              </li>
+              <li>
+                <b>Seamless Integration:</b> Whether it’s advanced apps or
+                marketing tools, Mavro integrates effortlessly with your
+                existing business systems, giving you the flexibility to scale.
+              </li>
+            </ul>
+            <h3><b>Ready to build something extraordinary?</b></h3>
+            <br />
+            <p>
+              Mavro is here to help you leave an impact, not just on your
+              customers, but on the entire eCommerce landscape. Transform your
+              online presence into a force to be reckoned with. <br />
+            </p>
+            <br />
+            <p>Start now, and let’s build your digital legacy with Mavro</p>
+          </section>
+          <section id="install2">
+            <p class="subtitle">How to Install Mavro Theme</p>
+            <h2>Theme Install</h2>
+            <ul>
+              <li>
+                <p>
+                  Follow these simple steps to get started with your Mavro theme
+                  and transform your store into a professional online shop
+                </p>
+              </li>
+              <li>
+                <ol>
+                  <li>
+                    <b> Step 1: Download the Theme File</b>
+
+                    <p>
+                      Once you've purchased or acquired the Mavro theme, you'll
+                      receive a .zip file. Make sure to download and save it to
+                      your computer.
+                    </p>
+                  </li>
+                  <li>
+                    <b> Step 2: Log in to Your Shopify Store</b>
+
+                    <p>
+                      Go to your Shopify admin panel by logging into your
+                      Shopify store at [your-store-name].myshopify.com/admin.
+                    </p>
+                  </li>
+                  <li>
+                    <b> Step 3: Access the 'Themes' Section</b>
+
+                    <p>
+                      In the Shopify admin panel, click on Online Store from the
+                      left sidebar. Then, click on Themes. This will bring you
+                      to the Themes page where you can manage your store's
+                      themes.
+                    </p>
+                  </li>
+                  <li>
+                    <b> Step 4: Upload the Mavro Theme</b>
+
+                    <p>
+                      On the Themes page, click the Upload Theme button located
+                      in the top-right corner. Choose the zip file you
+                      downloaded in<b> Step 1.</b>
+                      Click Upload and wait for the theme to upload to your
+                      store.
+                    </p>
+                  </li>
+                  <li>
+                    <b> Step 5: Publish the Mavro Theme</b>
+
+                    <p>
+                      Once the theme is successfully uploaded, it will appear in
+                      your theme library. To activate it, click on Actions next
+                      to the Mavro theme and then select Publish.
+                    </p>
+                  </li>
+                  <li>
+                    <b> Step 6: Customize Your Theme</b>
+
+                    <p>
+                      After publishing, go to Customize to begin personalizing
+                      your store. From here, you can adjust colors, fonts,
+                      layout, and other elements to match your brand. Use the
+                      intuitive drag-and-drop interface to make quick changes,
+                      or dive deeper into the theme's settings for advanced
+                      customizations.
+                    </p>
+                  </li>
+                  <li>
+                    <b> Step 7: Test Your Store</b>
+                    <p>
+                      Before you go live, make sure to preview your store on
+                      desktop, tablet, and mobile devices to ensure everything
+                      is working as expected.
+                    </p>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+          <section id="update3">
+            <p class="subtitle">Mavro Theme Update – What’s New?</p>
+            <h2>Theme Update</h2>
+            <ul>
+              <li>
+                <p>
+                  We’re excited to present the latest update for Mavro, packed
+                  with enhancements, new features, and improvements designed to
+                  take your eCommerce store to the next level. Here’s what’s new
+                  in this update:
+                </p>
+              </li>
+              <li>
+                <ol>
+                  <li>
+                    <b> 1. Improved User Interface & Experience</b>
+
+                    <p>
+                      We’ve refined the overall design for a smoother, more
+                      intuitive user experience. Expect more responsive layouts,
+                      cleaner navigation, and an overall improved browsing
+                      experience for both desktop and mobile users.
+                    </p>
+                  </li>
+                  <li>
+                    <b>2. Enhanced Performance & Speed</b>
+                    <p>
+                      Mavro's performance is now even faster! We’ve made
+                      significant improvements to the theme's load times,
+                      ensuring your site runs smoother and quicker, ultimately
+                      boosting your SEO and conversion rates.
+                    </p>
+                  </li>
+                  <li>
+                    <b>3. New Customization Options</b>
+                    <p>
+                      Mavro now offers even more ways to personalize your store!
+                      From header to footer, you now have enhanced design
+                      flexibility to match your brand identity seamlessly.
+                      Create a store that's uniquely yours with easy-to-use
+                      customization options.
+                    </p>
+                  </li>
+                  <li>
+                    <b>4. Advanced Mobile Optimization</b>
+                    <p>
+                      Mobile shopping continues to rise, and Mavro ensures that
+                      your store is ready. We’ve taken our mobile optimization
+                      to the next level, offering fluid layouts and faster
+                      loading times for the best mobile experience.
+                    </p>
+                  </li>
+                  <li>
+                    <b>5. Bug Fixes and Stability Improvements</b>
+                    <p>
+                      As always, we’ve addressed minor bugs and issues from
+                      previous versions. This update brings a more stable and
+                      reliable theme for a hassle-free experience.
+                    </p>
+                  </li>
+                  <li>
+                    <b>6. Updated Documentation and Support</b>
+                    <p>
+                      We've updated the theme documentation with clearer
+                      instructions, more detailed explanations, and additional
+                      troubleshooting tips. Our support team is ready to help
+                      you with any questions you may have.
+                    </p>
+                  </li>
+                  <li>
+                    <b>7. Compatibility with New Shopify Features</b>
+                    <p>
+                      This update includes compatibility improvements with the
+                      latest Shopify features, ensuring Mavro continues to work
+                      seamlessly with new Shopify tools and updates.
+                    </p>
+                    <br />
+                    <p>Update Now and Take Your Store to the Next Level!</p>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+          <section id="app4">
+            <p class="subtitle">Install Essential Apps for Maximum Performance</p>
+            <h2>Apps Install</h2>
+            <ul>
+              <li>
+                <p>
+                  To ensure your store is running at its full potential, Mavro integrates seamlessly with a range of powerful apps. These apps will enhance the functionality, optimize performance, and allow you to provide an even better shopping experience for your customers.
+                </p>
+              </li>
+              <li>
+                <ol>
+                  <li><h3>Why Should You Install These Apps?</h3></li>
+                  <li>
+                    <b> Enhanced Features:</b>
+
+                    <p>
+                      Unlock additional capabilities such as advanced marketing tools, shipping options, and product management features.
+                    </p>
+                  </li>
+                  <li>
+                    <b>Optimized for Mavro:</b>
+                    <p>All recommended apps are designed to work perfectly with Mavro, ensuring a smooth and reliable experience without any compatibility issues.</p>
+                  </li>
+                  <li>
+                    <b>Boost Store Performance:</b>
+                    <p> From boosting conversions to tracking analytics, these apps help you stay ahead of the competition and drive business growth.</p>
+                  </li>
+                </ol>
+                <ol>
+                  <li><h3>How to Install Apps:</h3></li>
+                  <li>
+                    <b>Browse the App Store:</b>
+                    <p>Head to the Shopify App Store to explore the apps that best suit your needs.</p>
+                  </li>
+                  <li>
+                    <b>One-Click Installation:</b>
+                    <p>With a few simple clicks, install apps directly into your store without any hassle.</p>
+                  </li>
+                  <li>
+                    <b>Configure and Customize:</b>
+                    <p>Customize app settings to fit your store’s specific requirements and get started.</p>
+                  </li>
+                </ol>
+                <ol>
+                  <li><h3>Recommended Apps for Mavro:</h3></li>
+                  <li>
+                    <b>SEO Booster:</b>
+                    <p>Enhance your SEO and get more visibility.</p>
+                  </li>
+                  <li>
+                    <b>Sales Pop:</b>
+                    <p>Display recent sales notifications to increase trust.</p>
+                  </li>
+                  <li>
+                    <b>Product Reviews:</b>
+                    <p>Collect customer feedback and increase credibility.</p>
+                  </li>
+                  <li>
+                    <b>Mailchimp for Shopify: </b>
+                    <p>Grow your email marketing campaigns effortlessly. </p><br>
+                    <p>Get the most out of your Mavro theme and take your store to the next level by installing the right apps today!</p>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+          <section id="customer5">
+            <p class="subtitle">Effortless & Secure</p>
+            <h2>Customer Registration</h2>
+            <ul>
+              <li>
+                <p>
+                  At Mavro, we believe in making every step of the shopping journey simple, secure, and convenient for your customers. Our customer registration feature is designed with ease of use and security in mind, ensuring that every user can create an account in just a few clicks.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Features: </h3>
+                  <b>1 Quick and Easy Sign-Up:</b>
+                  <p>
+                    Customers can register quickly with just a few details, eliminating unnecessary steps and improving the shopping experience.
+                  </p>
+                </li>
+                <li>
+                  <b>2 Secure & Private:</b>
+                  <p>All user data is protected with top-tier encryption, ensuring complete privacy and peace of mind.</p>
+                </li>
+                <li>
+                  <b>3 Customizable Fields:</b>
+                  <p>Tailor the registration form to gather the exact information you need from your customers, helping you provide a more personalized experience.</p>
+                </li>
+                <li>
+                  <b>4 Account Management:</b>
+                  <p>Customers can easily manage their personal details, order history, and track their purchases, providing them with full control over their account.</p>
+                </li>
+                <li>
+                  <b>5 User-Friendly Interface:</b>
+                  <p>Designed to be seamless, the registration page is optimized for both desktop and mobile users, ensuring a smooth experience across all devices.</p>
+                </li>
+                <li>
+                  <p>
+                    By enabling customer registration on your store, you not only enhance the shopping experience but also create a loyal customer base, making it easier to drive repeat sales and engage with your audience. <br>
+                  </p>
+                  <p>
+                    Start building your community today with Mavro’s hassle-free customer registration system.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="shipping6">
+            <p class="subtitle">Transparent and Flexible Shipping for Every Customer</p>
+            <h2>Shipping Rates</h2>
+            <ul>
+              <li>
+                <p>
+                  At Mavro, we understand that shipping is a crucial part of your customer’s shopping experience. That’s why we’ve made sure our theme fully supports flexible and transparent shipping options, allowing you to tailor the shipping experience to your unique business needs.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Features: </h3>
+                  <b>Customizable Shipping Rates:</b>
+                  <p>
+                    Set up flat rates, weight-based rates, or location-based rates to ensure you offer the best shipping options for your customers.
+                  </p>
+                </li>
+                <li>
+                  <b>Real-Time Shipping Calculations:</b>
+                  <p>Integrate real-time shipping calculators with leading carriers like UPS, FedEx, and USPS, so your customers know the exact cost of shipping before they check out.</p>
+                </li>
+                <li>
+                  <b>Free Shipping Options:</b>
+                  <p>Easily offer free shipping on specific products, orders over a certain amount, or to certain regions to incentivize purchases and boost conversions.</p>
+                </li>
+                <li>
+                  <b>Multiple Shipping Methods:</b>
+                  <p>Offer various shipping methods such as standard, expedited, or international shipping, giving your customers flexibility when choosing how fast they want their products.</p>
+                </li>
+                <li>
+                  <b>Seamless Integration with Shipping Providers:</b>
+                  <p>Automatically sync your rates with trusted shipping providers, ensuring smooth processing of orders from start to finish.</p>
+                </li>
+                <li>
+                  <b>Why Transparent Shipping Rates Matter:</b>
+                  <p>Providing clear and accurate shipping rates builds trust with your customers, enhances their shopping experience, and reduces cart abandonment. Mavro’s shipping functionality helps ensure that you can offer a hassle-free, straightforward, and competitive shipping service that supports your business goals.</p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="typography7">
+            <div>
+              <h2>Typography</h2>
+              <p>Typography allows setting the font elements such as font, font size, and alignment of texts for the site.</p>
+              <ul>
+                <li>From your Shopify admin, go to <b>Online Store -> Themes.</b></li>
+                <li>Find the theme that you want to edit, and then click <b>Customize.</b></li>
+                <li>Click <b>Theme settings -> Typography.</b></li>
+              </ul>
+              <div class="mavro_ss">
+                <b>One---</b>
+                <span>
+                  <img src="" alt="">
+                </span>
+              </div>
             </div>
-            <div class="docs_info">
-                <section class="welcome_doc">
-                    <p>MAVRO SHOPIFY THEME</p>
-                    <h1>Documentation</h1>
-                    <p>Standalone documentation with inline sections and a nested sidebar.</p>
-                    <span></span>
-                </section>
-                <section id="start">
-                    <h2>Getting Started</h2>
-                    <ul>
-                        <li>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                        <li>
-                            <h3>Prerequisites</h3>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="start1">
-                    <h2>Getting Started1</h2>
-                    <ul>
-                        <li>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                        <li>
-                            <h3>Prerequisites</h3>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="start2">
-                    <h2>Getting Started2</h2>
-                    <ul>
-                        <li>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                        <li>
-                            <h3>Prerequisites</h3>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="start3">
-                    <h2>Getting Started3</h2>
-                    <ul>
-                        <li>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                        <li>
-                            <h3>Prerequisites</h3>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                    </ul>
-                </section>
-                <section id="start4">
-                    <h2>Getting Started4</h2>
-                    <ul>
-                        <li>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                        <li>
-                            <h3>Prerequisites</h3>
-                            <p>This guide is self-contained. Use these steps to orient yourself, install the theme, and preview changes locally.</p>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </main>
+            <ul>
+              <li>
+                <p>
+                  The Header Layout is your store’s first impression. Mavro’s header is designed to provide clear, user-friendly navigation that enhances the overall shopping experience.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Features:</h3>
+                  <b>Customizable Structure:</b>
+                  <p>
+                    Tailor the header to match your brand’s style with flexible design options.
+                  </p>
+                </li>
+                <li>
+                  <b>Mega Menu Support:</b>
+                  <p>Display multiple categories for easy navigation, ideal for larger stores.</p>
+                </li>
+                <li>
+                  <b>Sticky Header Option: </b>
+                  <p>Keep your navigation accessible at all times with a sticky header.</p>
+                </li>
+                <li>
+                  <b>Responsive Design:</b>
+                  <p>The header adapts to any device, ensuring smooth functionality across desktop, tablet, and mobile.</p>
+                </li>
+                <li>
+                  <b>Logo & Branding Flexibility:</b>
+                  <p>Easily customize logo size, placement, and branding elements.</p>
+                </li>
+                <li>
+                  <b>Search & Navigation:</b>
+                  <p>Built-in search and easy-to-access navigation for a quicker shopping experience.</p>
+                </li>
+                <li>
+                  <h4>Why It Matters: </h4>
+                  <p>A well-designed header not only improves the user experience but also sets the tone for your store’s professionalism. Mavro ensures your customers navigate smoothly, wherever they are on your site.</p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="logo8">
+            <p class="subtitle">Your Brand, Your Identity</p>
+            <h2>Logo and Favicon</h2>
+            <ul>
+              <li>
+                <p>
+                  With Mavro, your brand identity is always front and center. The theme provides easy integration for your logo and favicon, ensuring your store looks professional, polished, and instantly recognizable across all platforms.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Logo Customization:</h3>
+                  <b>Customizable Structure:</b>
+                  <p>
+                    Your logo is the first impression of your brand, and Mavro makes sure it stands out. Easily upload your custom logo, and adjust its positioning, size, and alignment to match your store's unique style. Whether it's a text-based logo or an intricate design, Mavro ensures it looks sharp on all devices.
+                  </p>
+                </li>
+                <li>
+                  <b>Favicon Setup:</b>
+                  <p>
+                    A small icon with a big impact – the favicon is essential for branding and navigation. With Mavro, you can seamlessly upload and display your favicon on every browser tab, making your store easily identifiable even in crowded tabs. This tiny detail enhances your store’s professionalism and adds an extra touch of polish to your brand.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="color9">
+            <p class="subtitle">Your Brand’s Identity, Perfected</p>
+            <h2>Color Schema</h2>
+            <ul>
+              <li>
+                <p>
+                  Colors are more than just visuals – they are the essence of your brand identity. With Mavro, you gain full control over the color scheme, allowing you to seamlessly align your store’s design with your brand's personality and vision.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Features of Mavro’s Color Schema:</h3>
+                  <b>Predefined Color Schemes:</b>
+                  <p>Choose from a variety of stylish, modern color schemes that work perfectly for different types of stores. Whether you're running a fashion boutique or an electronics shop, there’s a color palette that will complement your brand’s tone.
+                  </p>
+                </li>
+                <li>
+                  <b>Customizable Colors:</b>
+                  <p>
+                    Prefer something unique? Mavro offers easy customization options so you can tailor the color palette to match your brand’s colors. Adjust primary, secondary, and background colors to create a harmonious look that fits your store's theme.
+                  </p>
+                </li>
+                <li>
+                  <b>Consistency Across All Pages: </b>
+                  <p>
+                    Ensure a consistent brand experience across all pages, from the homepage to the checkout page. Mavro allows you to apply your color schema uniformly across the site, creating a cohesive and professional look.
+                  </p>
+                </li>
+                <li>
+                  <b>Color Accessibility: </b>
+                  <p>
+                     Mavro’s color scheme is designed with accessibility in mind. Choose colors that are both visually striking and easy to read for all users, including those with color vision impairments.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Transform Your Store's Visual Appeal
+                    The right color combination doesn’t just enhance the visual appeal – it can influence customer behavior. Mavro’s color customization options help you create a store that not only attracts customers but keeps them engaged, reflecting your brand’s true essence.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="button10">
+            <p class="subtitle">Empowering User Interaction</p>
+            <h2>Buttons</h2>
+            <ul>
+              <li>
+                <p>At Mavro, we believe that the smallest elements make the biggest difference. Our button designs are meticulously crafted to not only look stunning but also enhance the overall user experience. Every button is responsive, intuitive, and designed to prompt action – ensuring your customers engage with your site exactly as you intend.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Features of Mavro Buttons:</h3>
+                  <b>01. Seamless Interactivity</b>
+                  <p>Whether it’s adding a product to the cart, completing a checkout, or simply navigating your site, Mavro buttons provide a smooth and efficient user experience.
+                  </p>
+                </li>
+                <li>
+                  <b>
+                    02. Customizable Styles:
+                  </b>
+                  <p>
+                    Choose from a variety of pre-designed button styles, or easily customize colors, shapes, and hover effects to match your branding.
+                  </p>
+                </li>
+                <li>
+                  <b>
+                    03. Optimized for All Devices:
+                  </b>
+                  <p>
+                    Mavro ensures that buttons are not only visually appealing but also function flawlessly across all screen sizes, providing a consistent experience on mobile, tablet, and desktop.
+                  </p>
+                </li>
+                <li>
+                  <b>
+                    04. Clear Call-to-Action:
+                  </b>
+                  <p>
+                    Our buttons are designed to stand out, making it easy for users to identify and interact with key areas of your site. Whether it’s “Add to Cart” or “Learn More,” your message is delivered with clarity.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Mavro’s buttons are more than just a design element—they are a key tool in driving conversions and encouraging action on your site. Empower your customers to take the next step with confidence.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="social11">
+            <p class="subtitle">Connect with the World via Social Media</p>
+            <h2>Social Media</h2>
+            <ul>
+              <li>
+                <p>
+                  In today’s digital landscape, social media is an essential bridge between you and your customers. With Mavro, seamlessly integrate social media links and widgets into your store to stay connected and engage with your audience on platforms like Facebook, Instagram, Twitter, and more.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Why Social Media Integration Matters:</h3>
+                  <b>Boost Engagement:</b>
+                  <p>
+                    Social media buttons and feeds encourage customers to interact
+                  </p>
+                </li>
+                <li>
+                  <b>Build Community:</b>
+                  <p>
+                   Create a loyal customer base by fostering direct communication through social media, strengthening your brand’s presence.
+                  </p>
+                </li>
+                <li>
+                  <b>Increase Reach:</b>
+                  <p>
+                   Leverage social media platforms to expand your reach and attract new customers, driving traffic to your store with every post and share.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                   With Mavro, integrating social media tools is quick and easy, ensuring your store stays up-to-date and connected to the pulse of your audience.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="card12">
+            <p class="subtitle">Simplify Your Shopping Experience</p>
+            <h2>Product Card </h2>
+            <ul>
+              <li>
+                <p>
+                  Our product card is designed to present your products in the most attractive and user-friendly way possible. With Mavro, each product is displayed in a sleek, organized layout that emphasizes your product’s best features, allowing customers to quickly browse and make informed purchasing decisions.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Features:</h3>
+                  <b>Clean and Clear Design:</b>
+                  <p>The product card layout is minimalist yet effective, ensuring that the focus remains on your products with no distractions.
+                  </p>
+                </li>
+                <li>
+                  <b>Quick View Option:</b>
+                  <p>Enable customers to see essential product details without leaving the page, speeding up the browsing experience.
+                  </p>
+                </li>
+                <li>
+                  <b>Dynamic Add-to-Cart Button:</b>
+                  <p>
+                    The intuitive ‘Add to Cart’ button makes it easy for customers to take action immediately.
+                  </p>
+                </li>
+                <li>
+                  <b>High-Quality Product Images:</b>
+                  <p>
+                    Showcase your products with high-resolution images that are easily zoomable for closer inspection.
+                  </p>
+                </li>
+                <li>
+                  <b>Customizable Layouts:</b>
+                  <p>
+                    Easily adjust the design to match your store’s unique branding and style.
+                  </p>
+                </li>
+                <li>
+                  <b>Responsive & Mobile-Friendly: </b>
+                  <p>
+                    The product card adapts perfectly to any screen size, ensuring an optimal experience across all devices.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    The product card in Mavro is not just a visual element; it's a tool built for conversion. The ease of navigation and clear presentation allows your customers to make purchase decisions with confidence.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="language13">
+            <p class="subtitle">Theme Language</p>
+            <h2>Theme Language</h2>
+            <ul>
+              <li>
+                <p>
+                  Mavro is designed with international users in mind, offering robust language support. The theme language settings allow you to easily customize the language of your store, helping you create a more personalized experience for customers in different regions.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>What’s included?</h3>
+                  <b>Language Switch:</b>
+                  <p>
+                    Easily change the theme's language to provide a tailored experience for your customers.
+                  </p>
+                </li>
+                <li>
+                  <b>Multi-Language Support: </b>
+                  <p>
+                    Mavro supports multiple languages, enabling you to serve your store in various languages and reach a global audience.
+                  </p>
+                </li>
+                <li>
+                  <b>Internationalization (i18n)</b>
+                  <p>
+                     The theme’s elements like buttons, menus, and labels can be translated into different languages, making it easier for you to enter international markets.
+                  </p>
+                </li>
+                <li>
+                  <h3>How it works?</h3>
+                  <p>
+                    Mavro integrates seamlessly with Shopify’s built-in multi-language features, allowing you to set up different languages directly from your Shopify admin panel. You can also add custom translations, so your customers can view your store in their preferred language.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="currence14">
+            <p class="subtitle">A Global Shopping Experience</p>
+            <h2>Multiple Currencies</h2>
+            <ul>
+              <li>
+                <p>
+                  Mavro theme supports multiple currencies, making it easier than ever to cater to customers from around the world. With this feature, your store can automatically detect the visitor's location and display prices in their local currency, ensuring a smooth and personalized shopping experience.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Benefits:</h3>
+                  <b>Global Reach:</b>
+                  <p>
+                    Expand your customer base by offering prices in different currencies, making your store accessible to international shoppers.
+                  </p>
+                </li>
+                <li>
+                  <b>Seamless Conversion: </b>
+                  <p>Automatic currency conversion based on the customer's location, allowing for easy price comparison and smoother transactions.
+                  </p>
+                </li>
+                <li>
+                  <b>Customizable: </b>
+                  <p>
+                    Easily enable or disable currencies to suit your market needs.
+                  </p>
+                </li>
+                <li>
+                  <b>Improved User Experience:</b>
+                  <p>
+                    Customers are more likely to make a purchase when they can view prices in their own currency, improving conversion rates and customer satisfaction.
+                  </p>
+                </li>
+                <li>
+                  <p>This feature ensures your store is truly international, enhancing the global appeal of your business and offering a seamless shopping experience no matter where your customers are.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="search15">
+            <p class="subtitle">Find What You’re Looking for, Instantly</p>
+            <h2>Quick Search</h2>
+            <ul>
+              <li>
+                <p>
+                  Quick Search is designed to enhance your customers’ shopping experience by enabling them to find products faster and more efficiently. With just a few keystrokes, users can instantly discover what they need, saving valuable time and reducing bounce rates.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Features of Quick Search:</h3>
+                  <b>Instant Results:</b>
+                  <p>
+                    As soon as the customer starts typing, relevant results appear instantly, ensuring a smooth browsing experience.
+                  </p>
+                </li>
+                <li>
+                  <b>Product Suggestions:</b>
+                  <p>
+                    The search feature intelligently suggests products based on keywords, helping customers explore more items that match their interest.
+                  </p>
+                </li>
+                <li>
+                  <b>Easy Navigation:</b>
+                  <p>
+                    The search bar is strategically placed for easy access, allowing shoppers to quickly jump to their desired product category or page.
+                  </p>
+                </li>
+                <li>
+                  <b>Filter Options: </b>
+                  <p>
+                    Customers can refine their search results with built-in filters such as price range, categories, and more to narrow down their choices.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Quick Search not only streamlines the shopping process but also improves customer satisfaction by making product discovery quick, easy, and stress-free.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="progress16">
+            <p class="subtitle">Effortless Shopping Experience with</p>
+            <h2>Cart and Progress Bar</h2>
+            <ul>
+              <li>
+                <p>Mavro’s intuitive Cart and Progress Bar provide a smooth and engaging shopping experience for your customers. With every step of the purchase process clearly outlined, customers know exactly where they are and how far they have to go.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Features:</h3>
+                  <b>Simple Cart Design:</b>
+                  <p>
+                    Easily accessible and visually clear, the cart icon stays visible throughout the shopping journey, ensuring customers can always review their selections before checkout.
+                  </p>
+                </li>
+                <li>
+                  <b>Dynamic Progress Bar: </b>
+                  <p>
+                    The progress bar tracks the steps from cart to checkout, offering real-time updates on the purchase process. Customers can see their progress and know when to expect to complete their order.
+                  </p>
+                </li>
+                <li>
+                  <b>Seamless Transition:</b>
+                  <p>
+                    From adding products to the cart to finalizing the checkout, the entire process is streamlined, ensuring a hassle-free experience for customers.
+                  </p>
+                </li>
+                <li>
+                  <b>Customization Options: </b>
+                  <p>
+                    You can adjust the cart's look and functionality to match your store’s unique style, making sure it’s both practical and visually appealing.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Whether your customers are making a quick purchase or browsing through multiple products, Mavro’s Cart and Progress Bar help them stay informed and confident through every stage of their shopping experience.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="newsletter17">
+            <p class="subtitle">Stay Updated with Mavro’s</p>
+            <h2>Newsletter</h2>
+            <ul>
+              <li>
+                <p>
+                  Keep your customers in the loop and never miss an opportunity to engage with them! With Mavro’s built-in Newsletter Popup, you can easily capture leads and build a loyal customer base. <br>
+                  Our intuitive design ensures that your newsletter signup process is smooth, non-intrusive, and highly effective. You can customize the popup’s look and feel to match your brand’s style while offering exclusive deals, new arrivals, or important updates to your subscribers.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Why Use Mavro’s Newsletter Popup?</h3>
+                  <b>Easy Setup:</b>
+                  <p>Integrate the newsletter signup with just a few clicks – no technical knowledge needed.
+                  </p>
+                </li>
+                <li>
+                  <b>Customizable Design:</b>
+                  <p>Tailor the appearance of the popup to match your website’s branding and colors.
+                  </p>
+                </li>
+                <li>
+                  <b>Enhanced Engagement:</b>
+                  <p>Boost customer retention by offering them a direct line to your latest news and promotions.
+                  </p>
+                </li>
+                <li>
+                  <b>Optimized for Conversions:</b>
+                  <p>Strategically designed to grab attention and maximize signups without disrupting the user experience.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Whether you're growing your audience or keeping your existing customers informed, the Mavro Newsletter Popup is the perfect tool to keep your business connected and always one step ahead.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="goup18">
+            <p class="subtitle">Go Up Button</p>
+            <h2>Go Up Button</h2>
+            <ul>
+              <li>
+                <p>The Go Up Button is a simple yet powerful feature designed to enhance the user experience on your website. Located at the bottom-right of the screen, it provides a quick way for visitors to navigate back to the top of the page with just a click. This feature is especially useful for longer pages, saving your customers time and effort by eliminating the need to manually scroll back to the top.
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3>Key Benefits:</h3>
+                  <b>Improved Navigation:</b>
+                  <p>Enables smooth and fast navigation, especially for pages with large amounts of content.
+                  </p>
+                </li>
+                <li>
+                  <b>User-Friendly:</b>
+                  <p>A non-intrusive way to help users quickly get back to the top, enhancing the overall browsing experience.
+                  </p>
+                </li>
+                <li>
+                  <b>Optimized for Mobile:</b>
+                  <p> The button works seamlessly on all devices, ensuring users can easily access it whether they are on a desktop or mobile.
+                  </p>
+                </li>
+                <li>
+                  <p>Integrating a Go Up Button ensures that your site is more intuitive, efficient, and provides a professional touch to the user experience.
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="color9">
+            <p class="subtitle"></p>
+            <h2></h2>
+            <ul>
+              <li>
+                <p>
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3></h3>
+                  <b></b>
+                  <p>
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+          <section id="color9">
+            <p class="subtitle"></p>
+            <h2></h2>
+            <ul>
+              <li>
+                <p>
+                </p>
+              </li>
+              <ol>
+                <li>
+                  <h3></h3>
+                  <b></b>
+                  <p>
+                  </p>
+                </li>
+              </ol>
+            </ul>
+          </section>
+        </div>
+      </main>
     </div>
 
-
     <script src="assets/js/custom.js"></script>
-</body>
+  </body>
 </html>

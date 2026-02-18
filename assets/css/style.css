@@ -23,8 +23,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+small, strike, strong, sub, sup, tt, var, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -49,7 +48,7 @@ body {
 	font-optical-sizing: auto;
 	font-weight: normal;
 	font-style: normal;
-	font-size: var(--font-size);
+	overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
@@ -58,7 +57,9 @@ h1 { font-size: 36px;}
 h2 { font-size: 28px;}
 h3 { font-size: 20px;}
 p { font-size: 14px}
-
+b{
+	font-weight: 500;
+}
 ol, ul {
 	list-style: none;
 }
@@ -94,7 +95,13 @@ a{
 	align-items: center;
 	justify-content: center;
 }
-
+.subtitle{
+	color: #ff8400;
+	text-transform: uppercase;
+}
+.title{
+	color: #1e1d1b;
+}
 /* -------- css --------- */
 .mavro_sidebar{
     min-width: 250px;
@@ -252,6 +259,7 @@ a{
     height: 100vh;
     overflow-y: scroll;
 	scroll-behavior: smooth;
+	/* font-family: "Inter", sans-serif; */
 }
 .menu_toggle{
 	background-color: gray;
@@ -262,7 +270,7 @@ a{
 }
 .docs_wraper section{    
 	padding: 36px 40px;
-    background-color: #efefef;
+    background-color: #f7f7f7;
     margin-bottom: 40px;
     box-shadow: 1px 1px 30px #c3c3c363;
     border: 1px solid #e3e3e3;
@@ -278,7 +286,7 @@ a{
 }
 .docs_info section h2{
 	border-bottom: 1px solid #80808066;
-	padding-bottom: 10px;
+	padding: 10px 0;
 }
 .docs_info section ul li{
 	padding: 16px 0;
@@ -291,6 +299,10 @@ a{
 .docs_info section li h3{
 	margin-bottom: 14px;
 }
+.docs_info ol li p {
+	margin-top: 10px;
+}
+
 .overlay{
 	position: fixed;
     top: 0px;
