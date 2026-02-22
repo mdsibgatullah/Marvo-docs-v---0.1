@@ -220,6 +220,16 @@ a {
 	background-color: #5a514b;
 	height: calc(100vh - 74px);
 }
+.mavro_sidebar .nav_list{
+	overflow-y: scroll;
+    height: inherit;
+	padding: 5px;
+}
+.mavro_sidebar .nav_list::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+	color: #000;
+}
 
 .mavro_sidebar p,
 .nav_drop_item {
