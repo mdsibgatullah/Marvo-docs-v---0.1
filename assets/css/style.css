@@ -435,7 +435,10 @@ ul.nav_drop:after {
 	box-shadow: 1px 1px 30px #c3c3c363;
 	border: 1px solid #e3e3e3;
 }
-
+.welcome_data{
+	display: grid;
+	grid-template-columns: 1.1fr 1fr;
+}
 .welcome_doc h1 {
 	margin: 15px 0;
 }
@@ -507,6 +510,11 @@ ul.nav_drop:after {
     transform: translate(-50%, -50%);
 }
 /* -------- responsive css --------- */
+@media screen and (max-width: 992px) {
+	.welcome_data{
+		grid-template-columns: 1fr;
+	}
+}
 @media screen and (max-width: 768px) {
 	.mavro_doc {
 		display: block;
