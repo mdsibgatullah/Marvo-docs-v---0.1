@@ -437,7 +437,8 @@ ul.nav_drop:after {
 }
 .welcome_data{
 	display: grid;
-	grid-template-columns: 1.1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	max-width: 1400px;
 }
 .welcome_doc h1 {
 	margin: 15px 0;
@@ -510,9 +511,12 @@ ul.nav_drop:after {
     transform: translate(-50%, -50%);
 }
 /* -------- responsive css --------- */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1100px) {
 	.welcome_data{
 		grid-template-columns: 1fr;
+	}
+	.welcome_content{
+		order: 1;
 	}
 }
 @media screen and (max-width: 768px) {
