@@ -491,13 +491,18 @@ ul.nav_drop:after {
 	display: block;
 }
 .sv_step_theme_img span, 
-.sv_step_theme_imgs span{
+.sv_step_theme_imgs span,
+.sv_step_theme_image span
+{
 	cursor: pointer;
     background: #e9e9e9c7;
     padding: 10px;
+	display: block;
 }
 .sv_step_theme_img span img, 
-.sv_step_theme_imgs span img{
+.sv_step_theme_imgs span img,
+.sv_step_theme_image span img
+{
 	margin: 0 auto;
 }
 .overlay {
